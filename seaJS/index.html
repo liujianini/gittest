@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<body>
+
+</body>
+
+<script src="libs/sea.js"></script>
+<script>
+
+	console.log(seajs);
+
+	seajs.config({
+		alias:{
+			"jq":'jquery-1.11.3',
+			"cookie":'jquery.cookie'
+		}
+	});
+	seajs.use(['./module/unit'],function(unit){
+		console.log(unit)
+	});
+</script>
+</html>

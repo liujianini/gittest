@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+
+<script src="libs/require.js"></script>
+<script>
+	//console.dir(require);   // 加载模块用的
+	//require([路径(必选参数)],回调函数);
+	// require(["module/unit"],function(unit){
+	// 	console.log(unit);
+	// })
+	//console.dir(define);	// 定义模块用的
+
+	require(["module/unit1","module/unit2"],function(a,b){
+		console.log(a,b)
+	})
+</script>
+</html>
